@@ -12,14 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
-      "type": "string"
-    },
-    "SeoInformation": {
-      "type": "component",
-      "repeatable": false,
-      "component": "seo.seo-information"
-    },
     "HomeHero": {
       "displayName": "HeroSection",
       "type": "component",
@@ -32,6 +24,21 @@
         "blog.featured-post",
         "blog.post-selection"
       ],
+      "required": true
+    },
+    "Services": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service.service"
+    },
+    "PageInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.page",
+      "required": false
+    },
+    "Title": {
+      "type": "string",
       "required": true
     }
   }

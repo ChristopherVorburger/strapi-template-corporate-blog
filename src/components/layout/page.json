@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_layout_pages",
+  "info": {
+    "displayName": "PageInfo",
+    "icon": "hanukiah",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Cover": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "SeoInformation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo-information"
+    },
+    "Content": {
+      "type": "richtext"
+    }
+  }
+}
